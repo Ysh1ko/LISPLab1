@@ -24,13 +24,10 @@
 CL-USER> ...
  ...
  ```
- ## Варіант <номер варіанту>
+ ## Варіант 21 (5)
  <p align="center">
- <img src="lab-1-variant.png">
  </p>
- ```lisp
-CL-USER> (let ((under1 (list 4 'e)))
+```CL-USER> (let ((under1 (list 4 'e)))
   (let ((v5 (list 'D under1 (list 5) 'F)))
     v5))
-(D (4 E) (5) F)
- ```
+(D (4 E) (5) F)```
