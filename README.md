@@ -11,55 +11,55 @@
 
 ```lisp
 ;; Оголошення списку
-(setq my-list (list 'a 1 (list 'b 2) '() 22))
+CL-USER> (setq my-list (list 'a 1 (list 'b 2) '() 22))
 (A 1 (B 2) NIL 22)
 
 ;; Виведення голови списку
-(car my-list) 
+CL-USER> (car my-list) 
 A
 
 ;; Виведення хвоста списку
-(cdr my-list) 
+CL-USER> (cdr my-list) 
 (1 (B 2) NIL 22)
 
 ;; Виведення третього елемента списку
-(nth 2 my-list) 
+CL-USER> (nth 2 my-list) 
 (B 2)
 
 ;; Виведення останнього елемента списку
-(car (last my-list)) 
+CL-USER> (car (last my-list)) 
 22
 
 ;; ATOM  1  - не список
-(atom (car my-list)) 
+CL-USER> (atom (car my-list)) 
 T
 
 ;; ATOM  2 - список
-(atom (nth 2 my-list)) 
+CL-USER> (atom (nth 2 my-list)) 
 NIL
 
 ;; LISTP  1 - не список
-(listp (car (last my-list))) 
+CL-USER> (listp (car (last my-list))) 
 NIL
 
 ;; LISTP  2 - список
-(listp (nth 2 my-list)) 
+CL-USER> (listp (nth 2 my-list)) 
 T
 
 ;; EQ  1 - не однакові
-(eq (nth 2 my-list) '(b 2))
+CL-USER> (eq (nth 2 my-list) '(b 2))
 NIL
 
 ;; EQUAL  2 - однакові
-(equal (nth 2 my-list) '(b 2))
+CL-USER> (equal (nth 2 my-list) '(b 2))
 T
 
  ;; EQUALP  3 - однакові
-(equalp '(B 2) '(b 2))
+CL-USER> (equalp '(B 2) '(b 2))
 T
 
 ;; APPEND
-(append my-list (nth 2 my-list))
+CL-USER> (append my-list (nth 2 my-list))
 (A 1 (B 2) NIL 22 B 2) 
 
 ```
