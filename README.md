@@ -18,6 +18,7 @@
 CL-USER> (let ((under1 (list 4 'e)))
   (let ((v5 (list 'D under1 (list 5) 'F)))
     v5))
+
 (D (4 E) (5) F)
 ```
 </p>
